@@ -1,0 +1,22 @@
+{
+  "objectInfo" : {
+    "id" : "cR1oO9SSfiDj7NzMmIIs4B",
+    "name" : "_COMMON",
+    "type" : "Folder",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Servicos/Conexoes/POs/DI reutilizaveis",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "objectRefs" : [ ]
+}
