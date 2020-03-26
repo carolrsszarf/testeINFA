@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "1soH1bIkZvBifWCYmzVweB",
+    "name" : "MP_Insert_Oracle_bulkload",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V170000000000LT"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "objectRefs" : [ {
+    "id" : "9NOUm7iJ2u9jSGUtdbr8GV",
+    "name" : "Oracle ukdb13_2_target",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000006Y"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Grupo Pereira",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "8TQjgmktdrzgoVuITy6t0t",
+    "name" : "Oracle ukdb13_2",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B000000000033"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "liberty",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}
