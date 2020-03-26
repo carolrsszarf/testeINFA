@@ -1,0 +1,22 @@
+{
+  "objectInfo" : {
+    "id" : "dU30PE6ELSBbgchjBqd8y1",
+    "name" : "API_LOG",
+    "type" : "Folder",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Seguranca Logs de APIs",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "objectRefs" : [ ]
+}
