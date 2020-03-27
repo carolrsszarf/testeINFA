@@ -1,0 +1,22 @@
+{
+  "objectInfo" : {
+    "id" : "0m99jf8eteTkDAsOw6nJMo",
+    "name" : "OTIMIX",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Integrações com OTIMIX",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "objectRefs" : [ ]
+}
