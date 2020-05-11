@@ -1,0 +1,130 @@
+{
+  "objectInfo" : {
+    "id" : "6eStBZy5SaPdwtSBZse4Wn",
+    "name" : "tsk_User_stg",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0Z0000000000J0"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "objectRefs" : [ {
+    "id" : "b7xRfljvNoRfSUpkWlvdaZ",
+    "name" : "mp_User_stg_sp",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V170000000000K7"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Proceso que consume un fichero json del tipo User, lo aplana y:\n1.- Lo comprime y lo sube a ec2\n2.- Crea las tablas de stage en Redshift",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_Bug_Json/Mappings"
+  }, {
+    "id" : "e1d4xZA8sAIkkQZQXnkhis",
+    "name" : "cnx_persistent_ec2_ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004T"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Conexión de Ficheros para el procesamiento y aplanado de los ficheros json, en la máquina de ec2. Desde dicha máquina se transmitirán a s3 una vez al día.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "4ML3OZClbM5i2HFt1sRK0n",
+    "name" : "cnx_redshift_STG_rs",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Conexión al cluster redshift de irlanda.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "iMlCcnJGH4hlv9C8oalEm5",
+    "name" : "cnx_txtEvents_ec2_ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004M"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Directorio donde se encuentran los ficheros txt para su ejecución en informática.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "gVl6UeCKy4YcG3ODvSdAYP",
+    "name" : "BRW1PC0JYF01",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V2500000000000A"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

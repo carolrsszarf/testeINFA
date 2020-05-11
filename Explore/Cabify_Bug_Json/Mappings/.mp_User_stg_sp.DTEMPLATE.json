@@ -1,0 +1,267 @@
+{
+  "objectInfo" : {
+    "id" : "b7xRfljvNoRfSUpkWlvdaZ",
+    "name" : "mp_User_stg_sp",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V170000000000K7"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Proceso que consume un fichero json del tipo User, lo aplana y:\n1.- Lo comprime y lo sube a ec2\n2.- Crea las tablas de stage en Redshift",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "objectRefs" : [ {
+    "id" : "9ae4Sv4qAkzj2U9w4RaEqE",
+    "name" : "User_orgunit",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000011"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20orgunit",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "0g9hxxIG2Scge4r7pz1uGl",
+    "name" : "User_promos",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000010"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20promos",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "iRdSphBbLmTbvSBwO8FF8C",
+    "name" : "User_optedoutelements",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000015"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20optedoutelements",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "0kjHL35yBikgefbownhUOG",
+    "name" : "User_region",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000012"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20region",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "e1d4xZA8sAIkkQZQXnkhis",
+    "name" : "cnx_persistent_ec2_ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004T"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Conexión de Ficheros para el procesamiento y aplanado de los ficheros json, en la máquina de ec2. Desde dicha máquina se transmitirán a s3 una vez al día.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "8MCbPiUWcgRhtPDgylhW65",
+    "name" : "User_journey",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000014"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20journey",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "9ysh8vewY7ocI2nSmRMCIe",
+    "name" : "User_emailcc",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V3000000000000Z"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User%20-%20Email%20CC",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "02fVxWTf4i3g97HopiE9wR",
+    "name" : "User_adminregions",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000016"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20del%20array%20User%20-%20Admin%20Regions",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "dcdFGH2bO0Pd3m33AvqFGV",
+    "name" : "User_radiostations",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000013"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User-Radio%20Stations",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  }, {
+    "id" : "4ML3OZClbM5i2HFt1sRK0n",
+    "name" : "cnx_redshift_STG_rs",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Conexión al cluster redshift de irlanda.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "iMlCcnJGH4hlv9C8oalEm5",
+    "name" : "cnx_txtEvents_ec2_ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V0B00000000004M"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Directorio donde se encuentran los ficheros txt para su ejecución en informática.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "eqVDSLk6NSIdBNUkdzz528",
+    "name" : "User_ppal",
+    "type" : "STRUCTURE_DISCOVERY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01003V30000000000017"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Estructura%20de%20User",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Cabify_bug_json_folder2/Intelligent Sctructure"
+  } ]
+}
